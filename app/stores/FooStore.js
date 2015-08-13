@@ -1,7 +1,6 @@
 import Dispatcher from '../dispatcher/Dispatcher';
 import {EventEmitter} from 'events';
 import {ActionTypes} from '../constants/FooConstants';
-import 'babel/polyfill';
 
 var CHANGE_EVENT = 'change';
 
