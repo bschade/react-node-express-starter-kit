@@ -1,0 +1,62 @@
+{
+  "name": "react-node-express-starter-kit",
+  "version": "0.1.0",
+  "description": "Start a React project with an node/express server",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js",
+    "postinstall": "gulp build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "asynch": "^0.5.2",
+    "autoprefixer-core": "^5.2.0",
+    "babel": "^5.8.21",
+    "babelify": "^6.1.2",
+    "browserify": "^10.2.3",
+    "compression": "^1.4.4",
+    "express": "^4.12.4",
+    "faker": "^3.0.1",
+    "flux": "^2.0.3",
+    "flux-constant": "^1.0.4",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-develop-server": "^0.4.3",
+    "gulp-livereload": "^3.8.0",
+    "gulp-postcss": "^5.1.8",
+    "gulp-stylus": "^2.0.3",
+    "jade": "^1.10.0",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.1",
+    "node-env-file": "^0.1.7",
+    "react": "^0.13.3",
+    "request": "^2.57.0",
+    "request-promise": "^0.4.2",
+    "slug": "^0.9.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-jest": "*",
+    "jest-cli": "git://github.com/facebook/jest#0.5.x"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": [
+      "es6",
+      "js",
+      "jsx"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6",
+      "jsx"
+    ],
+    "unmockedModulePathPatterns": [
+      "babel",
+      "<rootDir>/node_modules/react"
+    ]
+  }
+}

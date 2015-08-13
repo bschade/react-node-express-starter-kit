@@ -1,0 +1,5 @@
+# Copy this file with the name of .env
+# Add relevant data for local development
+# Do not add .env file to repository due to security sensitive data
+
+FOO=
