@@ -1,6 +1,8 @@
 jest.dontMock('../app/components/Foo');
 jest.dontMock('../app/components/BaseComponent');
+jest.dontMock('babel/polyfill');
 
+require('babel/polyfill');
 var React =  require('react/addons');
 var Foo = require('../app/components/Foo');
 var TestUtils = React.addons.TestUtils;
