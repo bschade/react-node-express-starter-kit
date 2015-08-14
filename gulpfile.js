@@ -8,7 +8,7 @@ var stylus = require('gulp-stylus');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer-core');
 
-gulp.task('build', function () {
+gulp.task('build', ['css'], function () {
   return browserify({
     entries: 'app/components/Main.jsx',
     extensions: ['.jsx','.js'],
