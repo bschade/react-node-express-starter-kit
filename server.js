@@ -5,7 +5,7 @@ var app = express()
 var compress = require('compression')();
 var request = require('request-promise');
 var env = require('node-env-file');
-var Foo = require('./app/components/foo.jsx')
+var Foo = require('./app/components/Foo.jsx')
 
 if(process.env.NODE_ENV == 'development') {
   try {
