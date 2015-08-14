@@ -8,7 +8,14 @@
     "start": "node server.js",
     "postinstall": "gulp build"
   },
-  "author": "",
+  "author": "bschade",
+  "engines": {
+    "iojs": "1.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bschade/react-node-express-starter-kit.git"
+  },
   "license": "ISC",
   "dependencies": {
     "asynch": "^0.5.2",
