@@ -15,8 +15,8 @@ describe('Foo', () => {
     );
     var p = TestUtils.scryRenderedDOMComponentsWithTag(foo, 'p');
 
-    expect(/Server time on page load/.test(p[0].getDOMNode().textContent)).toBeTruthy();
-    expect(/Counter, click to increase/.test(p[1].getDOMNode().textContent)).toBeTruthy();
+    expect(p[0].getDOMNode().textContent).toContain('Server time on page load');
+    expect(p[1].getDOMNode().textContent).toContain('Counter, click to increase');
   });
 
 });
